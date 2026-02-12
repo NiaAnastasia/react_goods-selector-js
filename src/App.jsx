@@ -31,7 +31,7 @@ export const App = () => {
           />
         </h1>
       ) : (
-        <h1 className="title is-flex is-align-tems-center">
+        <h1 className="title is-flex is-align-items-center">
           No goods selected
         </h1>
       )}
@@ -58,16 +58,14 @@ export const App = () => {
                       -
                     </button>
                   ) : (
-                    !selectedGood && (
-                      <button
-                        data-cy="AddButton"
-                        type="button"
-                        className="button"
-                        onClick={() => setSelectedGood(good)}
-                      >
-                        +
-                      </button>
-                    )
+                    <button
+                      data-cy="AddButton"
+                      type="button"
+                      className="button"
+                      onClick={() => setSelectedGood(good)}
+                    >
+                      +
+                    </button>
                   )}
                 </td>
 
